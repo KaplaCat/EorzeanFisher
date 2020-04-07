@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EorzeanFisher.Views.User.ProfilPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+            
+                <StackLayout Margin="0,40,0,0">
+                    <Frame
+                        Margin="10,10,10,10"
+                        BorderColor="{StaticResource ela_red_opac}"
+                        BackgroundColor="{StaticResource ela_red_opac}"
+                        HasShadow="False"
+                        HeightRequest="150"
+                        CornerRadius="10">
+                        <StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Column="0"
+                                    Text="Classe / Jobs"
+                                    TextColor="Black"
+                                    VerticalOptions="Start"
+                                    FontFamily="{StaticResource BoldFont}"
+                                    FontSize="22"/>
+
+                                <StackLayout Grid.Column="0"
+                                         VerticalOptions="Center">
+                                    <ProgressBar Progress="0.8"
+                                        ProgressColor="{StaticResource ela_light_blue}"/>
+
+                                    <Label Text="80%"
+                                        TextColor="Black"
+                                        Margin="0,-10,0,0"
+                                        FontFamily="{StaticResource BoldFont}"
+                                        FontSize="12"/>
+                                </StackLayout>
+
+                                <StackLayout Grid.Column="0"
+                                    VerticalOptions="End">
+                                    <Label  
+                                        Text="Plus"
+                                        TextColor="Black"
+                                        FontFamily="{StaticResource RegularFont}"
+                                        FontSize="15"/>
+
+
+                                    <BoxView BackgroundColor="{StaticResource ela_light_blue}"
+					                    Margin="0,-5,112,0"
+					                    HeightRequest="2"/>
+                                </StackLayout>
+
+                                <Image Grid.Column="1"
+                                    HorizontalOptions="End"
+                                    Margin="0,0,20,0"
+                                       Scale="2"
+                                    Source="red_mage_full.png"/>
+                            </Grid>
+
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ClassMore}"/>
+                            <TapGestureRecognizer Tapped="FrameTappedClass"
+                                                  NumberOfTapsRequired="1"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Margin="0,40,0,0">
+                <Frame
+                    Margin="10,10,10,10"
+                    BorderColor="{StaticResource ela_dark_blue_opac}"
+                    BackgroundColor="{StaticResource ela_dark_blue_opac}"
+                    HasShadow="False"
+                    HeightRequest="150"
+                    CornerRadius="10">
+                    <StackLayout>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label  Grid.Column="0"
+                                Text="Mascottes"
+                                TextColor="Black"
+                                VerticalOptions="Start"
+                                FontFamily="{StaticResource BoldFont}"
+                                FontSize="22"/>
+
+                            <StackLayout Grid.Column="0"
+                                VerticalOptions="End">
+                                <Label  
+                                    Text="Plus"
+                                    TextColor="Black"
+                                    FontFamily="{StaticResource RegularFont}"
+                                    FontSize="15"/>
+
+
+                                <BoxView BackgroundColor="{StaticResource ela_light_blue}"
+					                Margin="0,-5,112,0"
+					                HeightRequest="2"/>
+                            </StackLayout>
+
+                            <Image Grid.Column="1"
+                                HorizontalOptions="End"
+                                Scale="1.6"
+                                Source="minion.png"/>
+                        </Grid>
+
+                    </StackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding MinionMore}"/>
+                        <TapGestureRecognizer Tapped="FrameTappedMinion"
+                                              NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </StackLayout>
+
+                <StackLayout Margin="0,40,0,0">
+                    <Frame
+                    Margin="10,10,10,10"
+                    BorderColor="{StaticResource design_back_light_opac}"
+                    BackgroundColor="{StaticResource design_back_light_opac}"
+                    HasShadow="False"
+                    HeightRequest="150"
+                    CornerRadius="10">
+                        <StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label  Grid.Column="0"
+                                Text="Montures"
+                                TextColor="Black"
+                                VerticalOptions="Start"
+                                FontFamily="{StaticResource BoldFont}"
+                                FontSize="22"/>
+
+                                <StackLayout Grid.Column="0"
+                                VerticalOptions="End">
+                                    <Label  
+                                    Text="Plus"
+                                    TextColor="Black"
+                                    FontFamily="{StaticResource RegularFont}"
+                                    FontSize="15"/>
+
+
+                                    <BoxView BackgroundColor="{StaticResource ela_light_blue}"
+					                Margin="0,-5,112,0"
+					                HeightRequest="2"/>
+                                </StackLayout>
+
+                                <Image Grid.Column="1"
+                                HorizontalOptions="End"
+                                Scale="1.6"
+                                Source="mount.png"/>
+                            </Grid>
+
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding MountMore}"/>
+                            <TapGestureRecognizer Tapped="FrameTappedMount"
+                                              NumberOfTapsRequired="1"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -8,13 +8,16 @@
     <Application.Resources>
 
         <Color x:Key="ela_light_blue">#486a8f</Color>
-        <Color x:Key="ela_light_grey">#cccccc</Color>
+        <Color x:Key="ela_light_grey">#50cccccc</Color>
         <Color x:Key="ela_dark_grey">#494949</Color>
+        <Color x:Key="ela_red_opac">#50b63e41</Color>
         <Color x:Key="ela_red">#b63e41</Color>
         <Color x:Key="ela_dark_blue">#2d5080</Color>
+        <Color x:Key="ela_dark_blue_opac">#502d5080</Color>
         <Color x:Key="ela_white">#ffffff</Color>
         <Color x:Key="design_back">#151829</Color>
         <Color x:Key="design_back_light">#32374b</Color>
+        <Color x:Key="design_back_light_opac">#5032374b</Color>
         <Color x:Key="design_green">#31b899</Color>
         <Color x:Key="design_back_button">#4a4f63</Color>
         

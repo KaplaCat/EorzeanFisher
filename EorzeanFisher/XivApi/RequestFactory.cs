@@ -16,11 +16,15 @@ namespace EorzeanFisher.XivApi
             return instance;
         }
 
-        public string getUrlFromType(eRequest requestType, string id)
+        public string getUrlFromType(eRequest requestType, string id = ProfilSettings.ETHER_ID)
         {
             if(requestType == eRequest.FREE_COMPANY)
             {
                 return getFreeCompanyRequest(id);
+            }
+            else if(requestType == eRequest.FREE_COMPANY_MEMBERS)
+            {
+                return getFreeCompanyMembersRequest(id);
             }
             else
             {
@@ -30,10 +34,12 @@ namespace EorzeanFisher.XivApi
 
         string getFreeCompanyRequest(string id)
         {
-            if(id == string.Empty)
-            {
-                id = ProfilSettings.ETHER_ID;
-            }
+            string url = "https://xivapi.com/freecompany/" + id;
+            return url;
+        }
+
+        string getFreeCompanyMembersRequest(string id)
+        {
             string url = "https://xivapi.com/freecompany/" + id + "?data=FCM";
             return url;
         }

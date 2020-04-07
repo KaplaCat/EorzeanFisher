@@ -2,6 +2,7 @@
 using EorzeanFisher.Services.Dialog;
 using EorzeanFisher.Services.Http;
 using EorzeanFisher.Services.Navigation;
+using EorzeanFisher.ViewModel.Popup;
 using EorzeanFisher.ViewModel.User;
 using System;
 using System.Collections.Generic;
@@ -26,9 +27,9 @@ namespace EorzeanFisher.ViewModel.Base
 
             containerBuilder.RegisterType<MainViewModel>();
             containerBuilder.RegisterType<UserViewModel>();
+            containerBuilder.RegisterType<LoadingViewModel>();
+            containerBuilder.RegisterType<ProfilViewModel>();
             
-
-
         }
 
         public T Resolve<T>() => container.Resolve<T>();

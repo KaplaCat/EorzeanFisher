@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"   
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:xfshapeview="clr-namespace:XFShapeView;assembly=XFShapeView"
+             mc:Ignorable="d"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"  
+             x:Class="EorzeanFisher.Views.Popup.LoadingPopup">
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation
+          PositionIn="Center"
+          PositionOut="Center"
+          ScaleIn="1.2"
+          ScaleOut="1"
+          DurationIn="400"
+          DurationOut="100"
+          EasingIn="SinOut"
+          EasingOut="SinIn"
+          HasBackgroundAnimation="True"/>
+    </pages:PopupPage.Animation>
+
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <AbsoluteLayout>
+                    <Frame
+                    Margin="20"
+                    AbsoluteLayout.LayoutFlags="SizeProportional "
+                    AbsoluteLayout.LayoutBounds=".5,0,1,.5"
+                    HasShadow="False"
+                    CornerRadius="10">
+                        <Frame.Content>
+                            <StackLayout>
+                                <Label Margin="0,50,0,0"
+						        Text="Chargement"
+						        TextColor="Black"
+                                   HorizontalOptions="CenterAndExpand"
+						        FontFamily="{StaticResource LightFont}"
+						        FontSize="25"/>
+
+                                <Label Margin="0,30,0,0"
+						        Text="Récupérations des données en cours..."
+						        TextColor="Black"
+                                HorizontalOptions="CenterAndExpand"
+						        FontFamily="{StaticResource LightFont}"
+						        FontSize="15"/>
+                            </StackLayout>
+                        </Frame.Content>
+                    </Frame>
+
+                    <xfshapeview:ShapeView
+				    ShapeType="Circle"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds=".5,0,100,55"
+                    Margin="0,-15,0,0"
+                    Color="White"
+				    HeightRequest="100"
+				    WidthRequest="100"
+				    BorderWidth="2"
+				    BorderColor="{StaticResource ela_light_blue}">
+                        <xfshapeview:ShapeView.Content>
+                            <ActivityIndicator
+                            Color="{StaticResource ela_light_blue}"
+                            IsRunning="True"
+                            Scale="0.8"
+						    HorizontalOptions="Center"
+						    VerticalOptions="Center"/>
+                        </xfshapeview:ShapeView.Content>
+                    </xfshapeview:ShapeView>
+                </AbsoluteLayout>
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</pages:PopupPage>

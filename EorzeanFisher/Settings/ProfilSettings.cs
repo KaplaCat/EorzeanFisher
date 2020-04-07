@@ -6,6 +6,6 @@ namespace EorzeanFisher.Settings
 {
     public static class ProfilSettings
     {
-        public static string ETHER_ID = "9228438586435649681";
+        public const string ETHER_ID = "9228438586435649681";
     }
 }
