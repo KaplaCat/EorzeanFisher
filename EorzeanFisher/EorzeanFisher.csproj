@@ -22,10 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LodestoneParser\LodestoneParser.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Localization_fr-FR.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
