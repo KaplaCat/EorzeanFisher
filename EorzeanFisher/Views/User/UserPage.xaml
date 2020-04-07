@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Compagnie Libre"
+             x:Class="EorzeanFisher.Views.UserPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="The Eternal Bond"
+                Margin="0,15,0,0"
+                TextColor="Black"
+                FontFamily="{StaticResource RegularFont}"
+                FontSize="25"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+
+
+            <Grid Margin="0,30,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Column="0"
+                    HorizontalOptions="CenterAndExpand">
+                    <Label Text="{Binding Members}"
+                           FontSize="17"
+                           FontFamily="{StaticResource RegularFont}"
+                           HorizontalOptions="Center"
+                           TextColor="Black"/>
+                    <Label Text="Membres"
+                           FontSize="12"
+                           HorizontalOptions="Center"
+                           FontFamily="{StaticResource RegularFont}"
+                           TextColor="{StaticResource ela_dark_grey}"/>
+                </StackLayout>
+
+                <BoxView Grid.Column="1" 
+                    BackgroundColor="Black"
+                         WidthRequest="1"
+                         HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="Center"
+                         HeightRequest="20"/>
+
+                <StackLayout Grid.Column="2" 
+                    HorizontalOptions="CenterAndExpand">
+                    <Label Text="{Binding Datacenter}"
+                           FontSize="17"
+                           FontFamily="{StaticResource RegularFont}"
+                           HorizontalOptions="Center"
+                           TextColor="Black"/>
+                    <Label Text="Monde"
+                           FontSize="12"
+                           HorizontalOptions="Center"
+                           FontFamily="{StaticResource RegularFont}"
+                           TextColor="{StaticResource ela_dark_grey}"/>
+                </StackLayout>
+
+                <BoxView Grid.Column="3" 
+                    BackgroundColor="Black"
+                         WidthRequest="1"
+                         HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="Center"
+                         HeightRequest="20"/>
+
+                <StackLayout Grid.Column="4" 
+                    HorizontalOptions="CenterAndExpand">
+                    <Label Text="{Binding Rank}"
+                           FontSize="17"
+                           FontFamily="{StaticResource RegularFont}"
+                           HorizontalOptions="Center"
+                           TextColor="Black"/>
+                    <Label Text="Rang"
+                           FontSize="12"
+                           HorizontalOptions="Center"
+                           FontFamily="{StaticResource RegularFont}"
+                           TextColor="{StaticResource ela_dark_grey}"/>
+                </StackLayout>
+            </Grid>
+  
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

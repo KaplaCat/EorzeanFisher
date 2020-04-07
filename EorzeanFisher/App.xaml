@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EorzeanFisher.App">
+    <Application.Resources>
+
+        <Color x:Key="ela_light_blue">#486a8f</Color>
+        <Color x:Key="ela_light_grey">#cccccc</Color>
+        <Color x:Key="ela_dark_grey">#494949</Color>
+        <Color x:Key="ela_red">#b63e41</Color>
+        <Color x:Key="ela_dark_blue">#2d5080</Color>
+        <Color x:Key="ela_white">#ffffff</Color>
+        <Color x:Key="design_back">#151829</Color>
+        <Color x:Key="design_back_light">#32374b</Color>
+        <Color x:Key="design_green">#31b899</Color>
+        <Color x:Key="design_back_button">#4a4f63</Color>
+        
+        
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" 
+                x:Key="FontAwesomeBrands">
+                <On Platform="Android" 
+          Value="FontAwesome5BrandsRegular.otf#Regular" />
+                <On Platform="iOS" Value="FontAwesome5Brands-Regular" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" 
+                x:Key="FontAwesomeSolid">
+                <On Platform="Android" 
+          Value="FontAwesome5Solid.otf#Regular" />
+                <On Platform="iOS" Value="FontAwesome5Free-Solid" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" 
+                x:Key="FontAwesomeRegular">
+                <On Platform="Android" 
+          Value="FontAwesome5Regular.otf#Regular" />
+                <On Platform="iOS" Value="FontAwesome5Free-Regular" />
+            </OnPlatform>
+
+            <OnPlatform x:TypeArguments="x:String" x:Key="BoldFont">
+                <On Platform="Android" Value="Roboto-Bold.ttf#Roboto" />
+                <On Platform="iOS" Value="Roboto-Bold" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="LightFont">
+                <On Platform="Android" Value="Roboto-Light.ttf#Roboto" />
+                <On Platform="iOS" Value="Roboto-Light" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="RegularFont">
+                <On Platform="Android" Value="Roboto-Regular.ttf#Roboto" />
+                <On Platform="iOS" Value="Roboto-Regular" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="ThinFont">
+                <On Platform="Android" Value="Roboto-Thin.ttf#Roboto" />
+                <On Platform="iOS" Value="Roboto-Thin" />
+            </OnPlatform>
+
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

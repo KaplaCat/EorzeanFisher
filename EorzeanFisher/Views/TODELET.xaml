@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:EorzeanFisher.MarkupExtension"
+              xmlns:fontawesome="clr-namespace:EorzeanFisher.Utils"
+             mc:Ignorable="d"
+             x:Class="EorzeanFisher.Views.TODELET">
+    <ContentPage.Content>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label
+				Text="Heure en Eorzea : "
+				TextColor="Black"
+				FontFamily="{StaticResource RegularFont}"
+				FontSize="15"/>
+
+            <Label
+				Text="08:45"
+				TextColor="Black"
+				FontFamily="{StaticResource BoldFont}"
+				FontSize="15"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
