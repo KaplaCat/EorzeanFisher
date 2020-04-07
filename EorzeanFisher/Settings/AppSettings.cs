@@ -8,8 +8,7 @@ namespace EorzeanFisher.Settings
     static class AppSettings
     {
         public static string lang = "fr-FR";
-        
-        static string XIVAPI_KEY = "5966da3db81c45808f21087729e6cb88e0ada6648cd247f8803cfdea76f8694b";
+               
 
         const string MAJOR = "1.";
         const string MINOR = "0.";
@@ -22,7 +21,7 @@ namespace EorzeanFisher.Settings
 
         public static string getApiKey()
         {
-            return XIVAPI_KEY;
+            return string.Empty;
         }
     }
 }
