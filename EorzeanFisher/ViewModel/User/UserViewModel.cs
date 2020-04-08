@@ -26,7 +26,6 @@ namespace EorzeanFisher.ViewModel.User
 
         public UserViewModel()
         {
-            OpenLoadingPopup();
             requestData();
             subscribeToMessage();
         }
@@ -38,6 +37,7 @@ namespace EorzeanFisher.ViewModel.User
 
         async void requestData()
         {
+            await OpenLoadingPopup();
             JObject data = (JObject)await HttpService.GetDataAsync(
                 RequestFactory.getInstance().getUrlFromType(eRequest.FREE_COMPANY_MEMBERS))
                 .ConfigureAwait(false);

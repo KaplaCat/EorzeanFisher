@@ -7,6 +7,7 @@ namespace EorzeanFisher.XivApi
     public enum eRequest
     {
         FREE_COMPANY,
-        FREE_COMPANY_MEMBERS
+        FREE_COMPANY_MEMBERS,
+        CHARACTER_JOBS
     }
 }

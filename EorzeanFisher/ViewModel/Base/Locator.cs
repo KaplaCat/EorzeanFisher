@@ -29,6 +29,8 @@ namespace EorzeanFisher.ViewModel.Base
             containerBuilder.RegisterType<UserViewModel>();
             containerBuilder.RegisterType<LoadingViewModel>();
             containerBuilder.RegisterType<ProfilViewModel>();
+            containerBuilder.RegisterType<ClassJobsViewModel>();
+
             
         }
 

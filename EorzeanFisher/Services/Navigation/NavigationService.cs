@@ -116,6 +116,9 @@ namespace EorzeanFisher.Services.Navigation
             mappings.Add(typeof(UserViewModel), typeof(UserPage));
             mappings.Add(typeof(LoadingViewModel), typeof(LoadingPopup));
             mappings.Add(typeof(ProfilViewModel), typeof(ProfilPage));
+            mappings.Add(typeof(ClassJobsViewModel), typeof(ClassJobsPage));
+
+
             
         }       
     }
