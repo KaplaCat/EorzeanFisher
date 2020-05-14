@@ -7,5 +7,6 @@ namespace EorzeanFisher.Settings
     public static class ProfilSettings
     {
         public const string ETHER_ID = "9228438586435649681";
+        public const string DEV_ID = "20335138";
     }
 }

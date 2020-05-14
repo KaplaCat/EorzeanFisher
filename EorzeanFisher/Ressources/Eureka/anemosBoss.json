@@ -1,0 +1,82 @@
+{
+  "1": {
+    "name": "Pampa Corridor",
+    "type": 1
+  },
+  "2": {
+    "name": "Seigneur d'Anemos",
+    "type": 2
+  },
+  "3": {
+    "name": "Teles",
+    "type": 1
+  },
+  "4": {
+    "name": "Empereur d'Anemos",
+    "type": 1
+  },
+  "5": {
+    "name": "Callisto",
+    "type": 3
+  },
+  "6": {
+    "name": "Number",
+    "type": 4
+  },
+  "7": {
+    "name": "Jahannam",
+    "type": 1
+  },
+  "8": {
+    "name": "Amemet",
+    "type": 5
+  },
+  "9": {
+    "name": "Caym",
+    "type": 6
+  },
+  "10": {
+    "name": "Bombadeel",
+    "type": 3
+  },
+  "11": {
+    "name": "Serket",
+    "type": 3
+  },
+  "12": {
+    "name": "Julika",
+    "type": 6
+  },
+  "13": {
+    "name": "Cavalier Blanc",
+    "type": 4
+  },
+  "14": {
+    "name": "Polyphemus",
+    "type": 6
+  },
+  "15": {
+    "name": "Trotteur de Simurgh",
+    "type": 1
+  },
+  "16": {
+    "name": "Hazmat roi",
+    "type": 5
+  },
+  "17": {
+    "name": "Fafnir",
+    "type": 5
+  },
+  "18": {
+    "name": "Amarok",
+    "type": 6
+  },
+  "19": {
+    "name": "Lamashtu",
+    "type": 1
+  },
+  "20": {
+    "name": "Pazuzu",
+    "type": 1
+  }
+}

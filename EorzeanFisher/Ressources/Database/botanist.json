@@ -1,0 +1,23 @@
+
+  "static" "JObject",
+  "getFileFromRessource(string" "filePath)",
+  {
+    "var" "assembly",
+    "=" "IntrospectionExtensions.GetTypeInfo(typeof(AnemosTrackerViewModel)).Assembly;",
+    "var" "stream",
+    "=" "assembly.GetManifestResourceStream(filePath);",
+
+    "var" "resourceContent",
+    "=" "string.Empty;",
+    "using" "(var",
+    "reader" "=",
+    "new" "StreamReader(stream))",
+    {
+      "resourceContent" "=",
+      "reader.ReadToEnd();"
+    },
+    "JObject" "json",
+    "=" "JObject.Parse(resourceContent);",
+    "return" "json;"
+  
+}

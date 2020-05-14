@@ -1,9 +1,7 @@
 ﻿using Autofac;
 using EorzeanFisher.Services.Dialog;
-using EorzeanFisher.Services.Http;
 using EorzeanFisher.Services.Navigation;
 using EorzeanFisher.ViewModel.Popup;
-using EorzeanFisher.ViewModel.User;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -23,15 +21,11 @@ namespace EorzeanFisher.ViewModel.Base
 
             containerBuilder.RegisterType<DialogService>().As<IDialogService>();
             containerBuilder.RegisterType<NavigationService>().As<INavigationService>();
-            containerBuilder.RegisterType<HttpService>().As<IHttpService>();
 
             containerBuilder.RegisterType<MainViewModel>();
-            containerBuilder.RegisterType<UserViewModel>();
             containerBuilder.RegisterType<LoadingViewModel>();
-            containerBuilder.RegisterType<ProfilViewModel>();
-            containerBuilder.RegisterType<ClassJobsViewModel>();
 
-            
+
         }
 
         public T Resolve<T>() => container.Resolve<T>();

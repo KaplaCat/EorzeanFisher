@@ -6,7 +6,6 @@ namespace EorzeanFisher
 {
     public static class MessengerKeys
     {
-        // FC event
-        public const string MemberSelected = "MemberSelected";
+        
     }
 }

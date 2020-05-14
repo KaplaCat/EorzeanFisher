@@ -16,7 +16,7 @@ namespace EorzeanFisher
     {
         public MainPage()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         private async void OnItemTapped(object sender, EventArgs e)

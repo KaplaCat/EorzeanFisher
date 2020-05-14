@@ -1,10 +1,8 @@
 ﻿using EorzeanFisher.ViewModel;
 using EorzeanFisher.ViewModel.Base;
 using EorzeanFisher.ViewModel.Popup;
-using EorzeanFisher.ViewModel.User;
 using EorzeanFisher.Views;
 using EorzeanFisher.Views.Popup;
-using EorzeanFisher.Views.User;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -113,13 +111,7 @@ namespace EorzeanFisher.Services.Navigation
         void CreatePageViewModelMappings()
         {
             mappings.Add(typeof(MainViewModel), typeof(MainPage));
-            mappings.Add(typeof(UserViewModel), typeof(UserPage));
-            mappings.Add(typeof(LoadingViewModel), typeof(LoadingPopup));
-            mappings.Add(typeof(ProfilViewModel), typeof(ProfilPage));
-            mappings.Add(typeof(ClassJobsViewModel), typeof(ClassJobsPage));
-
-
-            
+            mappings.Add(typeof(LoadingViewModel), typeof(LoadingPopup));          
         }       
     }
 }

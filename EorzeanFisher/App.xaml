@@ -19,7 +19,10 @@
         <Color x:Key="design_back_light">#32374b</Color>
         <Color x:Key="design_back_light_opac">#5032374b</Color>
         <Color x:Key="design_green">#31b899</Color>
+        <Color x:Key="design_green_opac">#5031b899</Color>
         <Color x:Key="design_back_button">#4a4f63</Color>
+        <Color x:Key="design_orange_opac">#50E67E22</Color>
+        <Color x:Key="design_orange">#E67E22</Color>
         
         
         <ResourceDictionary>

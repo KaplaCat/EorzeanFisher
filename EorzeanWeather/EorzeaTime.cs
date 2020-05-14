@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace EorzeanFisher.Models
+namespace EorzeanWeather
 {
-    public static class EorzeaHour
+    public static class EorzeaTime
     {
         public static DateTime ToEorzeaTime(this DateTime date)
         {

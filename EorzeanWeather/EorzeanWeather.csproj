@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="data\TerritoryWeather.json" />
+    <None Remove="data\Weather.json" />
+    <None Remove="data\WeatherRate.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="data\TerritoryWeather.json" />
+    <EmbeddedResource Include="data\Weather.json" />
+    <EmbeddedResource Include="data\WeatherRate.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+</Project>

@@ -1,5 +1,4 @@
 ﻿using EorzeanFisher.Services.Dialog;
-using EorzeanFisher.Services.Http;
 using EorzeanFisher.Services.Navigation;
 using System;
 using System.Collections.Generic;
@@ -12,13 +11,11 @@ namespace EorzeanFisher.ViewModel.Base
     {
         protected readonly INavigationService NavigationService;
         protected readonly IDialogService DialogService;
-        protected readonly IHttpService HttpService;
 
         public ViewModelBase()
         {
             DialogService = Locator.Instance.Resolve<IDialogService>();
             NavigationService = Locator.Instance.Resolve<INavigationService>();
-            HttpService = Locator.Instance.Resolve<IHttpService>();
         }
 
         public virtual Task InitializeAsync(object navigationData) => Task.FromResult(false);
