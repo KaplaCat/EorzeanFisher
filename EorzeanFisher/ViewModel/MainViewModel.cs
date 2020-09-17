@@ -1,6 +1,7 @@
 ﻿using EorzeanFisher.Settings;
 using EorzeanFisher.Utils;
 using EorzeanFisher.ViewModel.Base;
+using EorzeanFisher.ViewModel.Guide;
 using EorzeanWeather;
 using System;
 using System.Collections.Generic;
@@ -13,11 +14,12 @@ namespace EorzeanFisher.ViewModel
     public class MainViewModel : ViewModelBase    
     {
         string versionApp;
+        public ICommand GuideClick => new AsyncCommand(OpenNfcConfigAsync);
+        Task OpenNfcConfigAsync() => NavigationService.NavigateToAsync<MainGuideViewModel>(true);
 
         public MainViewModel()
         {
             VersionApp = AppSettings.getAppVersion();
-                       
         }
 
         #region Ui Attributes

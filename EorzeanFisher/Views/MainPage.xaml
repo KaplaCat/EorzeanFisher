@@ -13,230 +13,231 @@
     <ContentPage.BindingContext>
         <viewModels:MainViewModel/>
     </ContentPage.BindingContext>
-    
-    <StackLayout>
-        <Image Source="logo.png"
-               Margin="20"/>
+    <ScrollView>
+        <StackLayout>
+            <Image Source="logo.png"
+                   Margin="20"/>
 
-        <Label Text="Eorzean Fisher"
-               FontSize="30"
-               Margin="0,20,0,0"
-               FontFamily="{StaticResource RegularFont}"
-               HorizontalOptions="Center"
-               TextColor="Black"/>
+            <Label Text="Eorzean Fisher"
+                   FontSize="30"
+                   Margin="0,20,0,0"
+                   FontFamily="{StaticResource RegularFont}"
+                   HorizontalOptions="Center"
+                   TextColor="Black"/>
 
-        <Label Text="by Cirina Sagahl"
-               Margin="0,-10,0,0"
-               FontSize="20"
-               FontFamily="{StaticResource LightFont}"
-               TextColor="{StaticResource ela_light_blue}"
-               HorizontalOptions="Center"/>
+            <Label Text="by Cirina Sagahl"
+                   Margin="0,-10,0,0"
+                   FontSize="20"
+                   FontFamily="{StaticResource LightFont}"
+                   TextColor="{StaticResource ela_light_blue}"
+                   HorizontalOptions="Center"/>
 
-        <Label Text="{Binding VersionApp}"               
-               Margin="0,-10,0,0"
-               FontSize="12"
-               FontFamily="{StaticResource LightFont}"
-               TextColor="Black"
-               HorizontalOptions="Center"/>
+            <Label Text="{Binding VersionApp}"               
+                   Margin="0,-10,0,0"
+                   FontSize="12"
+                   FontFamily="{StaticResource LightFont}"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
 
-        <Grid VerticalOptions="CenterAndExpand" Margin="0,0,0,0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+            <Grid VerticalOptions="CenterAndExpand" Margin="0,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-            <StackLayout Grid.Column="0">
-                <xfshapeview:ShapeView
-                        ShapeType="Circle"
-                        Margin="5,0,0,0"
-	                    HeightRequest="80"
-	                    WidthRequest="80"
-	                    BorderWidth="2"
-	                    BorderColor="{StaticResource ela_light_blue}">
-                    <xfshapeview:ShapeView.Content>
-                        <Label Text="{x:Static fontawesome:FontAwesomeIcons.Users}"
-							       FontFamily="{StaticResource FontAwesomeSolid}" 
-							       FontSize="30"
-							       TextColor="{StaticResource ela_light_blue}"
-							       HorizontalOptions="Center"
-							       VerticalOptions="Center"/>
-                    </xfshapeview:ShapeView.Content>
-                    <xfshapeview:ShapeView.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding FreeCompClick}"/>
-                        <TapGestureRecognizer Tapped="OnItemTapped" NumberOfTapsRequired="1"/>
-                    </xfshapeview:ShapeView.GestureRecognizers>
-                </xfshapeview:ShapeView>
-                <Label Text="Compagnie Libre"
-                           TextColor="Black"
-                           FontFamily="{StaticResource RegularFont}"
-                           FontSize="14"
-                           Margin="0,-5,0,0"
-                           HorizontalOptions="CenterAndExpand"/>
-            </StackLayout>
+                <StackLayout Grid.Column="0">
+                    <xfshapeview:ShapeView
+                            ShapeType="Circle"
+                            Margin="5,0,0,0"
+	                        HeightRequest="80"
+	                        WidthRequest="80"
+	                        BorderWidth="2"
+	                        BorderColor="{StaticResource ela_light_blue}">
+                        <xfshapeview:ShapeView.Content>
+                            <Label Text="{x:Static fontawesome:FontAwesomeIcons.Users}"
+							           FontFamily="{StaticResource FontAwesomeSolid}" 
+							           FontSize="30"
+							           TextColor="{StaticResource ela_light_blue}"
+							           HorizontalOptions="Center"
+							           VerticalOptions="Center"/>
+                        </xfshapeview:ShapeView.Content>
+                        <xfshapeview:ShapeView.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding FreeCompClick}"/>
+                            <TapGestureRecognizer Tapped="OnItemTapped" NumberOfTapsRequired="1"/>
+                        </xfshapeview:ShapeView.GestureRecognizers>
+                    </xfshapeview:ShapeView>
+                    <Label Text="Compagnie Libre"
+                               TextColor="Black"
+                               FontFamily="{StaticResource RegularFont}"
+                               FontSize="14"
+                               Margin="0,-5,0,0"
+                               HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
 
-            <StackLayout Grid.Column="1">
-                <xfshapeview:ShapeView
-                        ShapeType="Circle"
-                        Margin="5,0,0,0"
-	                    HeightRequest="80"
-	                    WidthRequest="80"
-	                    BorderWidth="2"
-                        Color="{Binding ScannerBackground}"
-	                    BorderColor="{StaticResource ela_light_blue}">
-                    <xfshapeview:ShapeView.Content>
-                        <Label Text="{x:Static fontawesome:FontAwesomeIcons.User}"
-							       FontFamily="{StaticResource FontAwesomeSolid}" 
-							       FontSize="30"
-							       TextColor="{StaticResource ela_light_blue}"
-							       HorizontalOptions="Center"
-							       VerticalOptions="Center"/>
-                    </xfshapeview:ShapeView.Content>
-                    <xfshapeview:ShapeView.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding UserClick}"/>
-                        <TapGestureRecognizer Tapped="OnItemTapped" NumberOfTapsRequired="1"/>
-                    </xfshapeview:ShapeView.GestureRecognizers>
-                </xfshapeview:ShapeView>
-                <Label Text="Profil"
-                           TextColor="Black"
-                           FontSize="14"
-                           FontFamily="{StaticResource RegularFont}"
-                           Margin="0,-5,0,0"
-                           HorizontalOptions="CenterAndExpand"/>
-            </StackLayout>
-        </Grid>
+                <StackLayout Grid.Column="1">
+                    <xfshapeview:ShapeView
+                            ShapeType="Circle"
+                            Margin="5,0,0,0"
+	                        HeightRequest="80"
+	                        WidthRequest="80"
+	                        BorderWidth="2"
+                            Color="{Binding ScannerBackground}"
+	                        BorderColor="{StaticResource ela_light_blue}">
+                        <xfshapeview:ShapeView.Content>
+                            <Label Text="{x:Static fontawesome:FontAwesomeIcons.User}"
+							           FontFamily="{StaticResource FontAwesomeSolid}" 
+							           FontSize="30"
+							           TextColor="{StaticResource ela_light_blue}"
+							           HorizontalOptions="Center"
+							           VerticalOptions="Center"/>
+                        </xfshapeview:ShapeView.Content>
+                        <xfshapeview:ShapeView.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding UserClick}"/>
+                            <TapGestureRecognizer Tapped="OnItemTapped" NumberOfTapsRequired="1"/>
+                        </xfshapeview:ShapeView.GestureRecognizers>
+                    </xfshapeview:ShapeView>
+                    <Label Text="Profil"
+                               TextColor="Black"
+                               FontSize="14"
+                               FontFamily="{StaticResource RegularFont}"
+                               Margin="0,-5,0,0"
+                               HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </Grid>
 
-        <Grid VerticalOptions="CenterAndExpand" Margin="0,0,0,0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+            <Grid VerticalOptions="CenterAndExpand" Margin="0,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-            <StackLayout Grid.Column="0">
-                <xfshapeview:ShapeView
-                        ShapeType="Circle"
-                        Margin="5,0,0,0"
-	                    HeightRequest="80"
-	                    WidthRequest="80"
-	                    BorderWidth="2"
-	                    BorderColor="{StaticResource ela_light_blue}">
-                    <xfshapeview:ShapeView.Content>
-                        <Label Text="{x:Static fontawesome:FontAwesomeIcons.Tools}"
-							       FontFamily="{StaticResource FontAwesomeSolid}" 
-							       FontSize="30"
-							       TextColor="{StaticResource ela_light_blue}"
-							       HorizontalOptions="Center"
-							       VerticalOptions="Center"/>
-                    </xfshapeview:ShapeView.Content>
-                    <xfshapeview:ShapeView.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding ToolsClick}"/>
-                        <TapGestureRecognizer Tapped="OnItemTapped" NumberOfTapsRequired="1"/>
-                    </xfshapeview:ShapeView.GestureRecognizers>
-                </xfshapeview:ShapeView>
-                <Label Text="Outils"
-                           TextColor="Black"
-                           FontFamily="{StaticResource RegularFont}"
-                           FontSize="14"
-                           Margin="0,-5,0,0"
-                           HorizontalOptions="CenterAndExpand"/>
-            </StackLayout>
+                <StackLayout Grid.Column="0">
+                    <xfshapeview:ShapeView
+                            ShapeType="Circle"
+                            Margin="5,0,0,0"
+	                        HeightRequest="80"
+	                        WidthRequest="80"
+	                        BorderWidth="2"
+	                        BorderColor="{StaticResource ela_light_blue}">
+                        <xfshapeview:ShapeView.Content>
+                            <Label Text="{x:Static fontawesome:FontAwesomeIcons.Tools}"
+							           FontFamily="{StaticResource FontAwesomeSolid}" 
+							           FontSize="30"
+							           TextColor="{StaticResource ela_light_blue}"
+							           HorizontalOptions="Center"
+							           VerticalOptions="Center"/>
+                        </xfshapeview:ShapeView.Content>
+                        <xfshapeview:ShapeView.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ToolsClick}"/>
+                            <TapGestureRecognizer Tapped="OnItemTapped" NumberOfTapsRequired="1"/>
+                        </xfshapeview:ShapeView.GestureRecognizers>
+                    </xfshapeview:ShapeView>
+                    <Label Text="Outils"
+                               TextColor="Black"
+                               FontFamily="{StaticResource RegularFont}"
+                               FontSize="14"
+                               Margin="0,-5,0,0"
+                               HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
 
-            <StackLayout Grid.Column="1">
-                <xfshapeview:ShapeView
-                        ShapeType="Circle"
-                        Margin="5,0,0,0"
-	                    HeightRequest="80"
-	                    WidthRequest="80"
-	                    BorderWidth="2"
-                        Color="{Binding ScannerBackground}"
-	                    BorderColor="{StaticResource ela_light_blue}">
-                    <xfshapeview:ShapeView.Content>
-                        <Label Text="{x:Static fontawesome:FontAwesomeIcons.Book}"
-							       FontFamily="{StaticResource FontAwesomeSolid}" 
-							       FontSize="30"
-							       TextColor="{StaticResource ela_light_blue}"
-							       HorizontalOptions="Center"
-							       VerticalOptions="Center"/>
-                    </xfshapeview:ShapeView.Content>
-                    <xfshapeview:ShapeView.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding LoreClick}"/>
-                        <TapGestureRecognizer Tapped="OnItemTapped" NumberOfTapsRequired="1"/>
-                    </xfshapeview:ShapeView.GestureRecognizers>
-                </xfshapeview:ShapeView>
-                <Label Text="Lore"
-                           TextColor="Black"
-                           FontSize="14"
-                           FontFamily="{StaticResource RegularFont}"
-                           Margin="0,-5,0,0"
-                           HorizontalOptions="CenterAndExpand"/>
-            </StackLayout>
-        </Grid>
+                <StackLayout Grid.Column="1">
+                    <xfshapeview:ShapeView
+                            ShapeType="Circle"
+                            Margin="5,0,0,0"
+	                        HeightRequest="80"
+	                        WidthRequest="80"
+	                        BorderWidth="2"
+                            Color="{Binding ScannerBackground}"
+	                        BorderColor="{StaticResource ela_light_blue}">
+                        <xfshapeview:ShapeView.Content>
+                            <Label Text="{x:Static fontawesome:FontAwesomeIcons.Book}"
+							           FontFamily="{StaticResource FontAwesomeSolid}" 
+							           FontSize="30"
+							           TextColor="{StaticResource ela_light_blue}"
+							           HorizontalOptions="Center"
+							           VerticalOptions="Center"/>
+                        </xfshapeview:ShapeView.Content>
+                        <xfshapeview:ShapeView.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding LoreClick}"/>
+                            <TapGestureRecognizer Tapped="OnItemTapped" NumberOfTapsRequired="1"/>
+                        </xfshapeview:ShapeView.GestureRecognizers>
+                    </xfshapeview:ShapeView>
+                    <Label Text="Lore"
+                               TextColor="Black"
+                               FontSize="14"
+                               FontFamily="{StaticResource RegularFont}"
+                               Margin="0,-5,0,0"
+                               HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </Grid>
 
-        <Grid VerticalOptions="CenterAndExpand" Margin="0,0,0,0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+            <Grid VerticalOptions="CenterAndExpand" Margin="0,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-            <StackLayout Grid.Column="0">
-                <xfshapeview:ShapeView
-                        ShapeType="Circle"
-                        Margin="5,0,0,0"
-	                    HeightRequest="80"
-	                    WidthRequest="80"
-	                    BorderWidth="2"
-	                    BorderColor="{StaticResource ela_light_blue}">
-                    <xfshapeview:ShapeView.Content>
-                        <Label Text="{x:Static fontawesome:FontAwesomeIcons.Database}"
-							       FontFamily="{StaticResource FontAwesomeSolid}" 
-							       FontSize="30"
-							       TextColor="{StaticResource ela_light_blue}"
-							       HorizontalOptions="Center"
-							       VerticalOptions="Center"/>
-                    </xfshapeview:ShapeView.Content>
-                    <xfshapeview:ShapeView.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding DatabaseClick}"/>
-                        <TapGestureRecognizer Tapped="OnItemTapped" NumberOfTapsRequired="1"/>
-                    </xfshapeview:ShapeView.GestureRecognizers>
-                </xfshapeview:ShapeView>
-                <Label Text="Database"
-                           TextColor="Black"
-                           FontFamily="{StaticResource RegularFont}"
-                           FontSize="14"
-                           Margin="0,-5,0,0"
-                           HorizontalOptions="CenterAndExpand"/>
-            </StackLayout>
+                <StackLayout Grid.Column="0">
+                    <xfshapeview:ShapeView
+                            ShapeType="Circle"
+                            Margin="5,0,0,0"
+	                        HeightRequest="80"
+	                        WidthRequest="80"
+	                        BorderWidth="2"
+	                        BorderColor="{StaticResource ela_light_blue}">
+                        <xfshapeview:ShapeView.Content>
+                            <Label Text="{x:Static fontawesome:FontAwesomeIcons.Database}"
+							           FontFamily="{StaticResource FontAwesomeSolid}" 
+							           FontSize="30"
+							           TextColor="{StaticResource ela_light_blue}"
+							           HorizontalOptions="Center"
+							           VerticalOptions="Center"/>
+                        </xfshapeview:ShapeView.Content>
+                        <xfshapeview:ShapeView.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding DatabaseClick}"/>
+                            <TapGestureRecognizer Tapped="OnItemTapped" NumberOfTapsRequired="1"/>
+                        </xfshapeview:ShapeView.GestureRecognizers>
+                    </xfshapeview:ShapeView>
+                    <Label Text="Database"
+                               TextColor="Black"
+                               FontFamily="{StaticResource RegularFont}"
+                               FontSize="14"
+                               Margin="0,-5,0,0"
+                               HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
 
-            <StackLayout Grid.Column="1">
-                <xfshapeview:ShapeView
-                        ShapeType="Circle"
-                        Margin="5,0,0,0"
-	                    HeightRequest="80"
-	                    WidthRequest="80"
-	                    BorderWidth="2"
-                        Color="{Binding ScannerBackground}"
-	                    BorderColor="{StaticResource ela_light_blue}">
-                    <xfshapeview:ShapeView.Content>
-                        <Label Text="{x:Static fontawesome:FontAwesomeIcons.FolderOpen}"
-							       FontFamily="{StaticResource FontAwesomeSolid}" 
-							       FontSize="30"
-							       TextColor="{StaticResource ela_light_blue}"
-							       HorizontalOptions="Center"
-							       VerticalOptions="Center"/>
-                    </xfshapeview:ShapeView.Content>
-                    <xfshapeview:ShapeView.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding GuideClick}"/>
-                        <TapGestureRecognizer Tapped="OnItemTapped" NumberOfTapsRequired="1"/>
-                    </xfshapeview:ShapeView.GestureRecognizers>
-                </xfshapeview:ShapeView>
-                <Label Text="Guides"
-                           TextColor="Black"
-                           FontSize="14"
-                           FontFamily="{StaticResource RegularFont}"
-                           Margin="0,-5,0,0"
-                           HorizontalOptions="CenterAndExpand"/>
-            </StackLayout>
-        </Grid>
+                <StackLayout Grid.Column="1">
+                    <xfshapeview:ShapeView
+                            ShapeType="Circle"
+                            Margin="5,0,0,0"
+	                        HeightRequest="80"
+	                        WidthRequest="80"
+	                        BorderWidth="2"
+                            Color="{Binding ScannerBackground}"
+	                        BorderColor="{StaticResource ela_light_blue}">
+                        <xfshapeview:ShapeView.Content>
+                            <Label Text="{x:Static fontawesome:FontAwesomeIcons.FolderOpen}"
+							           FontFamily="{StaticResource FontAwesomeSolid}" 
+							           FontSize="30"
+							           TextColor="{StaticResource ela_light_blue}"
+							           HorizontalOptions="Center"
+							           VerticalOptions="Center"/>
+                        </xfshapeview:ShapeView.Content>
+                        <xfshapeview:ShapeView.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding GuideClick}"/>
+                            <TapGestureRecognizer Tapped="OnItemTapped" NumberOfTapsRequired="1"/>
+                        </xfshapeview:ShapeView.GestureRecognizers>
+                    </xfshapeview:ShapeView>
+                    <Label Text="Guides"
+                               TextColor="Black"
+                               FontSize="14"
+                               FontFamily="{StaticResource RegularFont}"
+                               Margin="0,-5,0,0"
+                               HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </Grid>
 
+            
     </StackLayout>
-
+    </ScrollView>
 </ContentPage>

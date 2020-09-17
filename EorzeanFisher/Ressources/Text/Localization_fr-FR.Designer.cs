@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EorzeanFisher {
+namespace EorzeanFisher.Ressources.Text {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace EorzeanFisher {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("EorzeanFisher.Localization_fr-FR", typeof(Localization_fr_FR).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("EorzeanFisher.Ressources.Text.Localization_fr-FR", typeof(Localization_fr_FR).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,15 @@ namespace EorzeanFisher {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Liste des Guides.
+        /// </summary>
+        internal static string TITLE_GUIDE_LIST {
+            get {
+                return ResourceManager.GetString("TITLE_GUIDE_LIST", resourceCulture);
             }
         }
     }
