@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:fontawesome="clr-namespace:EorzeanFisher.Utils"
+             xmlns:custom="clr-namespace:EorzeanFisher.Views.Custom" 
+             xmlns:local="clr-namespace:EorzeanFisher.MarkupExtension"
+             mc:Ignorable="d"
+             x:Class="EorzeanFisher.Views.Guides.Dungeons.Tabs.SummaryPage">
+
+    <ScrollView>
+        <StackLayout>
+            <Grid HorizontalOptions="FillAndExpand" Margin="10,40,10,0">
+                <custom:CustomEasyCard Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center"
+                    TitleCard="1-4" IconCard="{x:Static fontawesome:FontAwesomeIcons.Users}"
+                                       x:Name="custom_card_nb_players"/>
+                <custom:CustomEasyCard Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center"
+                    TitleCard="Lvl.15" IconCard="{x:Static fontawesome:FontAwesomeIcons.SortNumericUpAlt}"
+                                       x:Name="custom_card_level"/>
+                <custom:CustomEasyCardClick Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Grid>
+
+            <StackLayout x:Name="stack_treasure_01">
+                <Label Margin="10,40,10,10"
+                    Text="{local:TranslateExtension TITLE_TREA_SASTASHA_01}"
+                    FontSize="20"
+                    FontFamily="{StaticResource LightFont}"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    TextColor="Black"/>
+
+                <ScrollView Orientation="Horizontal" Margin="10,0,10,0">
+                    <StackLayout x:Name="stack_item_card"
+                        Orientation="Horizontal">
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</StackLayout>

@@ -1,9 +1,11 @@
 ﻿using EorzeanFisher.ViewModel;
 using EorzeanFisher.ViewModel.Base;
 using EorzeanFisher.ViewModel.Guide;
+using EorzeanFisher.ViewModel.Guide.Dungeons;
 using EorzeanFisher.ViewModel.Popup;
 using EorzeanFisher.Views;
 using EorzeanFisher.Views.Guides;
+using EorzeanFisher.Views.Guides.Dungeons;
 using EorzeanFisher.Views.Popup;
 using System;
 using System.Collections.Generic;
@@ -115,7 +117,8 @@ namespace EorzeanFisher.Services.Navigation
             mappings.Add(typeof(MainViewModel), typeof(MainPage));
             mappings.Add(typeof(LoadingViewModel), typeof(LoadingPopup));
             mappings.Add(typeof(MainGuideViewModel), typeof(MainGuidePage));
-            
+            mappings.Add(typeof(DungeonListViewModel), typeof(DungeonListPage));
+            mappings.Add(typeof(DungeonDetailViewModel), typeof(DungeonDetailPage));
         }       
     }
 }

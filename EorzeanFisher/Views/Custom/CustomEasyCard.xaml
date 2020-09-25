@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Frame xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EorzeanFisher.Views.Custom.CustomEasyCard"
+            xmlns:fontawesome="clr-namespace:EorzeanFisher.Utils"
+             xmlns:xfshapeview="clr-namespace:XFShapeView;assembly=XFShapeView"
+       BorderColor="Black"
+       CornerRadius="10"
+       HasShadow="False"
+       HeightRequest="60"
+       WidthRequest="50">
+
+    <Frame.Content>
+        <StackLayout>
+            <Label x:Name="label_title_card" 
+                Text="Done"
+                   FontSize="13"
+                   FontFamily="{StaticResource LightFont}"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   TextColor="Black"/>
+
+            <Label Margin="0,10,0,0"
+                   x:Name="label_icone_card"
+                Text="{x:Static fontawesome:FontAwesomeIcons.Users}"
+				FontFamily="{StaticResource FontAwesomeSolid}" 
+				FontSize="24"
+				TextColor="{StaticResource ela_light_blue}"
+				HorizontalOptions="Center"
+				VerticalOptions="Center"/>
+        </StackLayout>
+    </Frame.Content>
+
+
+</Frame>

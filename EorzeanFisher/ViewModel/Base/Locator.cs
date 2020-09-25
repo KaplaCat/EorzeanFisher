@@ -1,7 +1,9 @@
 ﻿using Autofac;
 using EorzeanFisher.Services.Dialog;
 using EorzeanFisher.Services.Navigation;
+using EorzeanFisher.Services.Preferences;
 using EorzeanFisher.ViewModel.Guide;
+using EorzeanFisher.ViewModel.Guide.Dungeons;
 using EorzeanFisher.ViewModel.Popup;
 using System;
 using System.Collections.Generic;
@@ -22,6 +24,7 @@ namespace EorzeanFisher.ViewModel.Base
 
             containerBuilder.RegisterType<DialogService>().As<IDialogService>();
             containerBuilder.RegisterType<NavigationService>().As<INavigationService>();
+            containerBuilder.RegisterType<PreferenceService>().As<IPreferenceService>();
             containerBuilder.RegisterType<MainViewModel>();
 
             // Popup
@@ -29,6 +32,8 @@ namespace EorzeanFisher.ViewModel.Base
 
             // Guide
             containerBuilder.RegisterType<MainGuideViewModel>();
+            containerBuilder.RegisterType<DungeonListViewModel>();
+            containerBuilder.RegisterType<DungeonDetailViewModel>();
 
         }
 

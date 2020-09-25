@@ -7,23 +7,23 @@
              xmlns:fontawesome="clr-namespace:EorzeanFisher.Utils"
              xmlns:xfshapeview="clr-namespace:XFShapeView;assembly=XFShapeView"
              xmlns:local="clr-namespace:EorzeanFisher.MarkupExtension"
-             x:Class="EorzeanFisher.Views.Guides.MainGuidePage"
-             Title="Guides">
+             x:Class="EorzeanFisher.Views.Guides.Dungeons.DungeonListPage"
+             Title="{local:TranslateExtension ITEM_GUIDE_01}">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
                 <Label Margin="0,20,0,0"
-						Text="{local:TranslateExtension TITLE_GUIDE_LIST}"
+						Text="{local:TranslateExtension TITLE_GUIDE_DUNGEON_LIST}"
 						TextColor="Black"
                         HorizontalOptions="CenterAndExpand"
 						FontFamily="{StaticResource LightFont}"
 						FontSize="20"/>
-                
+
                 <StackLayout Margin="10,40,10,0"
                              Orientation="Horizontal">
 
                     <ListView x:Name="listGuide"
-                        ItemsSource="{Binding ListGuidesTypes}"
+                        ItemsSource="{Binding ListDungeonsType}"
                               Margin="10"
                               HasUnevenRows="True">
                         <ListView.ItemTemplate>
@@ -40,9 +40,9 @@
 	                                        BorderColor="{StaticResource ela_light_blue}">
                                             <xfshapeview:ShapeView.Content>
                                                 <Label 
-                                                    Text="{Binding GuideTypeIcon}"
-							                        FontFamily="{StaticResource FontAwesomeSolid}" 
-							                        FontSize="25"
+                                                    Text="{Binding Level}"
+							                        FontFamily="{StaticResource RegularFont}" 
+							                        FontSize="15"
 							                        TextColor="{StaticResource ela_light_blue}"
 							                        HorizontalOptions="Center"
 							                        VerticalOptions="Center"/>
@@ -50,13 +50,14 @@
                                         </xfshapeview:ShapeView>
 
                                         <Label x:Name="label"
-                                               Text="{Binding GuideTypeName}" Margin="30,0,0,0"
+                                               Text="{Binding Name}" Margin="30,0,0,0"
                                                VerticalOptions="Center"
                                                TextColor="Black"
                                                FontFamily="{StaticResource RegularFont}" 
 				                               FontSize="15"/>
+
                                         <StackLayout.GestureRecognizers>
-                                            <TapGestureRecognizer Command="{Binding Path=BindingContext.OpenTypeList, Source={x:Reference listGuide}}"
+                                            <TapGestureRecognizer Command="{Binding Path=BindingContext.OpenDungeonDetail, Source={x:Reference listGuide}}"
                                                                       CommandParameter="{Binding Source={x:Reference label}, Path=Text}"/>
                                         </StackLayout.GestureRecognizers>
                                     </StackLayout>

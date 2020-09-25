@@ -61,11 +61,101 @@ namespace EorzeanFisher.Ressources.Text {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Sastasha.
+        /// </summary>
+        internal static string DUNGEON_01 {
+            get {
+                return ResourceManager.GetString("DUNGEON_01", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à L&apos;Hypogée de Tam-Tara.
+        /// </summary>
+        internal static string DUNGEON_02 {
+            get {
+                return ResourceManager.GetString("DUNGEON_02", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Donjons.
+        /// </summary>
+        internal static string ITEM_GUIDE_01 {
+            get {
+                return ResourceManager.GetString("ITEM_GUIDE_01", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Défis.
+        /// </summary>
+        internal static string ITEM_GUIDE_02 {
+            get {
+                return ResourceManager.GetString("ITEM_GUIDE_02", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Liste des Donjons.
+        /// </summary>
+        internal static string TITLE_GUIDE_DUNGEON_LIST {
+            get {
+                return ResourceManager.GetString("TITLE_GUIDE_DUNGEON_LIST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Lore.
+        /// </summary>
+        internal static string TITLE_GUIDE_DUNGEON_LORE {
+            get {
+                return ResourceManager.GetString("TITLE_GUIDE_DUNGEON_LORE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Stratégie.
+        /// </summary>
+        internal static string TITLE_GUIDE_DUNGEON_STRAT {
+            get {
+                return ResourceManager.GetString("TITLE_GUIDE_DUNGEON_STRAT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Résumé.
+        /// </summary>
+        internal static string TITLE_GUIDE_DUNGEON_SUMMARY {
+            get {
+                return ResourceManager.GetString("TITLE_GUIDE_DUNGEON_SUMMARY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Récompenses.
+        /// </summary>
+        internal static string TITLE_GUIDE_DUNGEON_TREASURE {
+            get {
+                return ResourceManager.GetString("TITLE_GUIDE_DUNGEON_TREASURE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Liste des Guides.
         /// </summary>
         internal static string TITLE_GUIDE_LIST {
             get {
                 return ResourceManager.GetString("TITLE_GUIDE_LIST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Coffre de Boss 1.
+        /// </summary>
+        internal static string TITLE_TREA_SASTASHA_01 {
+            get {
+                return ResourceManager.GetString("TITLE_TREA_SASTASHA_01", resourceCulture);
             }
         }
     }

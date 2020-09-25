@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:fontawesome="clr-namespace:EorzeanFisher.Utils"
+             xmlns:xfshapeview="clr-namespace:XFShapeView;assembly=XFShapeView"
+             xmlns:local="clr-namespace:EorzeanFisher.MarkupExtension" 
+            xmlns:tabs="clr-namespace:EorzeanFisher.Views.Guides.Dungeons.Tabs"
+            x:Class="EorzeanFisher.Views.Guides.Dungeons.DungeonDetailPage">
+
+    <ContentPage Title="{local:TranslateExtension TITLE_GUIDE_DUNGEON_SUMMARY}">
+        <ContentPage.Content>
+            <tabs:SummaryPage TitleCardLevel="{Binding Level}" TitleCardPlayers="{Binding Players}"/>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="{local:TranslateExtension TITLE_GUIDE_DUNGEON_STRAT}">
+
+    </ContentPage>
+
+    <ContentPage Title="{local:TranslateExtension TITLE_GUIDE_DUNGEON_LORE}">
+
+    </ContentPage>
+</TabbedPage>

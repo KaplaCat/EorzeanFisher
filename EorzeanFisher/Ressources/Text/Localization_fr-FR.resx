@@ -117,7 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="DUNGEON_01" xml:space="preserve">
+    <value>Sastasha</value>
+  </data>
+  <data name="DUNGEON_02" xml:space="preserve">
+    <value>L'Hypogée de Tam-Tara</value>
+  </data>
+  <data name="ITEM_GUIDE_01" xml:space="preserve">
+    <value>Donjons</value>
+  </data>
+  <data name="ITEM_GUIDE_02" xml:space="preserve">
+    <value>Défis</value>
+  </data>
+  <data name="TITLE_GUIDE_DUNGEON_LIST" xml:space="preserve">
+    <value>Liste des Donjons</value>
+  </data>
+  <data name="TITLE_GUIDE_DUNGEON_LORE" xml:space="preserve">
+    <value>Lore</value>
+  </data>
+  <data name="TITLE_GUIDE_DUNGEON_STRAT" xml:space="preserve">
+    <value>Stratégie</value>
+  </data>
+  <data name="TITLE_GUIDE_DUNGEON_SUMMARY" xml:space="preserve">
+    <value>Résumé</value>
+  </data>
+  <data name="TITLE_GUIDE_DUNGEON_TREASURE" xml:space="preserve">
+    <value>Récompenses</value>
+  </data>
   <data name="TITLE_GUIDE_LIST" xml:space="preserve">
     <value>Liste des Guides</value>
+  </data>
+  <data name="TITLE_TREA_SASTASHA_01" xml:space="preserve">
+    <value>Coffre de Boss 1</value>
   </data>
 </root>

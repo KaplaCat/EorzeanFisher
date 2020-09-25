@@ -40,7 +40,7 @@ namespace EorzeanFisher.MarkupExtension
 		{
 			var assembly = typeof(TranslateExtension).GetTypeInfo().Assembly;
 			var assemblyName = assembly.GetName();
-			var resourceManager = new ResourceManager($"{assemblyName.Name}.Localization_{AppSettings.lang}", assembly);
+			var resourceManager = new ResourceManager($"{assemblyName.Name}.Ressources.Text.Localization_{AppSettings.lang}", assembly);
 			return resourceManager.GetString(key, CultureInfo.CurrentCulture);
 		}
 

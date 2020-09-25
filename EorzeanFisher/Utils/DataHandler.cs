@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EorzeanFisher.Models.Guides;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -16,6 +17,6 @@ namespace EorzeanFisher.Utils
         }
 
         public object Data { get; set; }
-        public string Title { get; set; }
+        public DungeonType DungeonSelect { get; set; } = null;
     }
 }

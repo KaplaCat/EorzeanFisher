@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Frame xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:xfshapeview="clr-namespace:XFShapeView;assembly=XFShapeView"
+            xmlns:fontawesome="clr-namespace:EorzeanFisher.Utils"
+             mc:Ignorable="d"
+             x:Class="EorzeanFisher.Views.Custom.CustomItemCard"
+       x:Name="frame_card"
+       BorderColor="{StaticResource ela_red_opac}"
+       CornerRadius="10"
+       HasShadow="False"
+       HeightRequest="150"
+       WidthRequest="100"
+       BackgroundColor="{StaticResource ela_red_opac}">
+
+    <Frame.Content>
+        <StackLayout>
+            <Image x:Name="image_card"
+                   Source=""
+                   HeightRequest="40"
+                   WidthRequest="40"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   Margin="0,0,0,0"/>
+
+            <Label x:Name="label_title_card" 
+                Text="ipsum libeera"
+                FontSize="13"
+                FontFamily="{StaticResource LightFont}"
+                HorizontalOptions="Start"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Start"
+                TextColor="Black"/>
+
+            <BoxView BackgroundColor="Black" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand"/>
+
+            <xfshapeview:ShapeView
+                x:Name="shape_card"
+                HorizontalOptions="CenterAndExpand"                    
+                VerticalOptions="End"
+                ShapeType="Circle"
+	            HeightRequest="30"
+	            WidthRequest="30"
+	            BorderWidth="2"
+	            BorderColor="{StaticResource ela_red}">
+                <xfshapeview:ShapeView.Content>
+                    <Label x:Name="label_shape_card"
+                        Text="{x:Static fontawesome:FontAwesomeIcons.Times}"
+						FontFamily="{StaticResource FontAwesomeSolid}" 
+						FontSize="15"
+						TextColor="{StaticResource ela_red}"
+						HorizontalOptions="CenterAndExpand"
+						VerticalOptions="CenterAndExpand"/>
+                </xfshapeview:ShapeView.Content>
+            </xfshapeview:ShapeView>
+        </StackLayout>
+    </Frame.Content>
+    
+    <Frame.GestureRecognizers>
+        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
+    </Frame.GestureRecognizers>
+
+</Frame>
